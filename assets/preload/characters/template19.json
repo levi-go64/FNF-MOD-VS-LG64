@@ -101,17 +101,17 @@
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/Pico_FNF_assetss",
+	"image": "characters/template19",
 	"position": [
 		0,
 		300
 	],
-	"healthicon": "pico",
+	"healthicon": "template19",
 	"flip_x": true,
 	"healthbar_colors": [
-		255,
 		0,
-		0
+		255,
+		121
 	],
 	"camera_position": [
 		0,
