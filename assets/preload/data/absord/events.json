@@ -1,0 +1,29 @@
+{
+	"song": {
+		"speed": 4,
+		"stage": "mall",
+		"player1": "bf",
+		"player2": "template1",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Screen Shake",
+						"76.18, 0.0010",
+						"76.18, 0.0010"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 150,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "absord"
+	}
+}
