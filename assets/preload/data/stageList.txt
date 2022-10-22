@@ -7,3 +7,8 @@ mallEvil
 school
 schoolEvil
 tank
+template1
+template2
+template3
+template4
+template5
