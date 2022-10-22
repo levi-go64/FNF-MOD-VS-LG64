@@ -1,0 +1,18 @@
+{
+	"song": {
+		"speed": 2,
+		"stage": "stage",
+		"player1": "bf",
+		"player2": "template9",
+		"player3": null,
+		"events": [],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 144,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "yamete-kudasai"
+	}
+}
