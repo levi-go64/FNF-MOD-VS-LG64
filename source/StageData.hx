@@ -36,13 +36,13 @@ class StageData {
 			{
 				case 'spookeez' | 'south' | 'monster':
 					stage = 'spooky';
-				case 'pico' | 'blammed' | 'philly' | 'philly-nice':
+				case 'pico' | 'unfairness' | 'philly' | 'philly-nice':
 					stage = 'philly';
 				case 'milf' | 'satin-panties' | 'high':
 					stage = 'limo';
-				case 'cocoa' | 'eggnog':
+				case 'unknown-loneliness' | 'dad-battle-mix' | 'lamprey-hole' | 'optimum-pride' | 'stress'| 'blok' | 'human-trafficking':
 					stage = 'mall';
-				case 'winter-horrorland':
+				case 'hill-of-the-void' | 'too-slow-encore' | 'sliced':
 					stage = 'mallEvil';
 				case 'senpai' | 'roses':
 					stage = 'school';
