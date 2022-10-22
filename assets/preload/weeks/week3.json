@@ -1,22 +1,113 @@
 {
 	"songs": [
-		["Pico", "pico", [148, 22, 83]],
-		["Philly Nice", "pico", [148, 22, 83]],
-		["Blammed", "pico", [148, 22, 83]]
+		[
+			"unknown-loneliness",
+			"template16",
+			[
+				115,
+				220,
+				255
+			]
+		],
+		[
+			"unfairness",
+			"template13",
+			[
+				255,
+				0,
+				0
+			]
+		],
+		[
+			"dad-battle-mix",
+			"template12",
+			[
+				0,
+				255,
+				0
+			]
+		],
+		[
+			"hill-of-the-void",
+			"template3",
+			[
+				80,
+				60,
+				80
+			]
+		],
+		[
+			"lamprey-hole",
+			"template19",
+			[
+				100,
+				255,
+				100
+			]
+		],
+		[
+			"optimum-pride",
+			"template18",
+			[
+				255,
+				0,
+				240
+			]
+		],
+		[
+			"too-slow-encore",
+			"template7",
+			[
+				95,
+				0,
+				0
+			]
+		],
+		[
+			"stress",
+			"template10",
+			[
+				155,
+				0,
+				0
+			]
+		],
+		[
+			"blok",
+			"template20",
+			[
+				80,
+				60,
+				80
+			]
+		],
+		[
+			"absord",
+			"template1",
+			[
+				146,
+				113,
+				253
+			]
+		]
 	],
-
+	"hiddenUntilUnlocked": true,
+	"hideFreeplay": false,
+	"weekBackground": "christmas",
+	"difficulties": "Easy,Normal, Hard",
 	"weekCharacters": [
-		"pico",
-		"bf",
-		"gf"
+		"",
+		"",
+		""
 	],
-	"weekBackground": "philly",
-
-	"storyName": "PICO",
-	"weekBefore": "week2",
-	"weekName": "Week 3",
-	"startUnlocked": true,
-
-	"hideStoryMode": false,
-	"hideFreeplay": false
+	"storyName": "vs lG-SIDE",
+	"weekName": "Week3",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": false
 }

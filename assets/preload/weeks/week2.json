@@ -1,22 +1,104 @@
 {
 	"songs": [
-		["Spookeez", "spooky", [34, 51, 68]],
-		["South", "spooky", [34, 51, 68]],
-		["Monster", "monster", [34, 51, 68]]
+		[
+			"Dad-Battle",
+			"template6",
+			[
+				0,
+				255,
+				255
+			]
+		],
+		[
+			"Fresh",
+			"template8",
+			[
+				0,
+				113,
+				253
+			]
+		],
+		[
+			"Bopeebo",
+			"spooky",
+			[
+				0,
+				0,
+				253
+			]
+		],
+		[
+			"Pico",
+			"template2",
+			[
+				0,
+				255,
+				0
+			]
+		],
+		[
+			"Satin-Panties",
+			"template9",
+			[
+				0,
+				175,
+				0
+			]
+		],
+		[
+			"Cocoa",
+			"template4",
+			[
+				255,
+				0,
+				0
+			]
+		],
+		[
+			"High",
+			"template5",
+			[
+				255,
+				113,
+				0
+			]
+		],
+		[
+			"Blammed",
+			"template14",
+			[
+				255,
+				0,
+				140
+			]
+		],
+		[
+			"Winter-Horrorland",
+			"template15",
+			[
+				255,
+				0,
+				220
+			]
+		]
 	],
-
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "",
 	"weekCharacters": [
-		"spooky",
-		"bf",
-		"gf"
+		"",
+		"",
+		""
 	],
-	"weekBackground": "halloween",
-
-	"storyName": "Spooky Month",
-	"weekBefore": "week1",
-	"weekName": "Week 2",
-	"startUnlocked": true,
-
+	"storyName": "Vs LG64 CREW",
+	"weekName": "LG64CREW",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
 	"hideStoryMode": false,
-	"hideFreeplay": false
+	"weekBefore": "week1",
+	"startUnlocked": true
 }
