@@ -1,22 +1,104 @@
 {
 	"songs": [
-		["Satin Panties", "mom", [252, 150, 215]],
-		["High", "mom", [252, 150, 215]],
-		["Milf", "mom", [252, 150, 215]]
+		[
+			"senpai",
+			"template16",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"roses",
+			"template13",
+			[
+				255,
+				0,
+				255
+			]
+		],
+		[
+			"milf",
+			"template7",
+			[
+				255,
+				0,
+				0
+			]
+		],
+		[
+			"ugh",
+			"template19",
+			[
+				0,
+				255,
+				113
+			]
+		],
+		[
+			"guns",
+			"template20",
+			[
+				0,
+				113,
+				253
+			]
+		],
+		[
+			"stress",
+			"template3",
+			[
+				255,
+				113,
+				0
+			]
+		],
+		[
+			"spookeez",
+			"template3",
+			[
+				255,
+				113,
+				0
+			]
+		],
+		[
+			"philly-nice",
+			"template1",
+			[
+				0,
+				113,
+				253
+			]
+		],
+		[
+			"thorns",
+			"template18",
+			[
+				135,
+				0,
+				0
+			]
+		]
 	],
-	
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": true,
+	"weekBackground": "halloween",
+	"difficulties": "",
 	"weekCharacters": [
-		"mom",
-		"bf",
-		"gf"
+		"",
+		"",
+		""
 	],
-	"weekBackground": "limo",
-
-	"storyName": "MOMMY MUST MURDER",
+	"storyName": "L-SIDE DEMO",
+	"weekName": "L-SIDE DEMO",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
 	"weekBefore": "week3",
-	"weekName": "Week 4",
-	"startUnlocked": true,
-
-	"hideStoryMode": false,
-	"hideFreeplay": false
+	"startUnlocked": true
 }
