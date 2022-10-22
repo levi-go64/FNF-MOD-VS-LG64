@@ -1,0 +1,18 @@
+{
+	"song": {
+		"speed": 4.5,
+		"stage": "philly",
+		"player1": "bf",
+		"player2": "template13",
+		"player3": null,
+		"events": [],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 100,
+		"arrowSkin": "",
+		"needsVoices": false,
+		"song": "unfainess"
+	}
+}
