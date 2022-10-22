@@ -1,0 +1,18 @@
+{
+	"song": {
+		"speed": 2.5,
+		"stage": "stage",
+		"player1": "bf",
+		"player2": "template14",
+		"player3": null,
+		"events": [],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 200,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "memories-trip"
+	}
+}
