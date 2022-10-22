@@ -81,9 +81,11 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['Caras q fizeram o port 0.6.2'],
-			['Dxgamer',	'dx',				'sla q colocar aqui',					'https://youtube.com/c/Dxgamer7405', 	'FE0015'],
-			['Idklool',	'idk',				'sla q colocar aqui',					'https://youtube.com/channel/UCOoeKCV2-Ku_6CNpYQ3TuxA', 	'FB3E9A'],
+			['MOD LG64 ANDROID'],
+			['levighazali',	'levi',				'made everything in this mod and port this mod to android',					'https://youtube.com/c/LG64TUBE', 	'5E99DF'],
+            ['Psych Engine Android port 0.6.2'],
+			['Dxgamer',	'dx',				'Main Programmers of psych engine android',					'https://youtube.com/c/Dxgamer7405', 	'FE0015'],
+			['Idklool',	'idk',				'Help the main Programmers of psych engine android',					'https://youtube.com/channel/UCOoeKCV2-Ku_6CNpYQ3TuxA', 	'FB3E9A'],
 			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
