@@ -1,0 +1,49 @@
+{
+	"song": {
+		"speed": 3.5,
+		"stage": "mall",
+		"player1": "bf",
+		"player2": "template18",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Screen Shake",
+						"",
+						"9.33, 999.999"
+					]
+				]
+			],
+			[
+				74563.1067961166,
+				[
+					[
+						"Screen Shake",
+						"74.61, 999.999",
+						""
+					]
+				]
+			],
+			[
+				75728.1553398059,
+				[
+					[
+						"Screen Shake",
+						"74.61, 999.999",
+						"74.61, 999.999"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 206,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "thorns"
+	}
+}
