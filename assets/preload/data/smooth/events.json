@@ -1,0 +1,18 @@
+{
+	"song": {
+		"speed": 2.6,
+		"stage": "stage",
+		"player1": "bf",
+		"player2": "template4",
+		"player3": null,
+		"events": [],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 206,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "smooth"
+	}
+}
