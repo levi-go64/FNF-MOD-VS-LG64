@@ -1,98 +1,26 @@
 {
 	"songs": [
 		[
-			"senpai",
-			"template16",
+			"human-trafficking",
+			"pico",
 			[
-				146,
-				113,
+				255,
+				0,
 				253
-			]
-		],
-		[
-			"roses",
-			"template13",
-			[
-				255,
-				0,
-				255
-			]
-		],
-		[
-			"milf",
-			"template7",
-			[
-				255,
-				0,
-				0
-			]
-		],
-		[
-			"ugh",
-			"template19",
-			[
-				0,
-				255,
-				113
-			]
-		],
-		[
-			"guns",
-			"template20",
-			[
-				0,
-				113,
-				253
-			]
-		],
-		[
-			"stress",
-			"template3",
-			[
-				255,
-				113,
-				0
-			]
-		],
-		[
-			"spookeez",
-			"template3",
-			[
-				255,
-				113,
-				0
-			]
-		],
-		[
-			"philly-nice",
-			"template1",
-			[
-				0,
-				113,
-				253
-			]
-		],
-		[
-			"thorns",
-			"template18",
-			[
-				135,
-				0,
-				0
 			]
 		]
 	],
 	"hiddenUntilUnlocked": false,
-	"hideFreeplay": true,
-	"weekBackground": "halloween",
+	"hideFreeplay": false,
+	"weekBackground": "philly",
 	"difficulties": "",
 	"weekCharacters": [
 		"",
 		"",
 		""
 	],
-	"storyName": "L-SIDE DEMO",
-	"weekName": "L-SIDE DEMO",
+	"storyName": "VS LG64 L-SIDE",
+	"weekName": "VS LG64",
 	"freeplayColor": [
 		146,
 		113,
