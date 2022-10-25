@@ -1,71 +1,105 @@
-local xx = 420.95;
-local yy = 513;
-local xx2 = 952.9;
-local yy2 = 550;
-local ofs = 60;
-local followchars = true;
-local del = 0;
-local del2 = 0;
+--wow look another cam follow script
+--epnis!! bals!
 
-function onUpdate()
-    if followchars == true then
-        if mustHitSection == false then
-            setProperty('defaultCamZoom',0.8)
-            if getProperty('dad.animation.curAnim.name') == 'singLEFT' then
-                triggerEvent('Camera Follow Pos',xx-ofs,yy)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'singRIGHT' then
-                triggerEvent('Camera Follow Pos',xx+ofs,yy)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'singUP' then
-                triggerEvent('Camera Follow Pos',xx,yy-ofs)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'singDOWN' then
-                triggerEvent('Camera Follow Pos',xx,yy+ofs)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'singLEFT-alt' then
-                triggerEvent('Camera Follow Pos',xx-ofs,yy)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'singRIGHT-alt' then
-                triggerEvent('Camera Follow Pos',xx+ofs,yy)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'singUP-alt' then
-                triggerEvent('Camera Follow Pos',xx,yy-ofs)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'singDOWN-alt' then
-                triggerEvent('Camera Follow Pos',xx,yy+ofs)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'idle-alt' then
-                triggerEvent('Camera Follow Pos',xx,yy)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'idle' then
-                triggerEvent('Camera Follow Pos',xx,yy)
-            end
-            if getProperty('dad.animation.curAnim.name') == 'hey' then
-                triggerEvent('Camera Follow Pos',xx - 130,yy)
-            end
-        else
-            setProperty('defaultCamZoom',1.0)
-            if getProperty('boyfriend.animation.curAnim.name') == 'singLEFT' then
-                triggerEvent('Camera Follow Pos',xx2-ofs,yy2)
-            end
-            if getProperty('boyfriend.animation.curAnim.name') == 'singRIGHT' then
-                triggerEvent('Camera Follow Pos',xx2+ofs,yy2)
-            end
-            if getProperty('boyfriend.animation.curAnim.name') == 'singUP' then
-                triggerEvent('Camera Follow Pos',xx2,yy2-ofs)
-            end
-            if getProperty('boyfriend.animation.curAnim.name') == 'singDOWN' then
-                triggerEvent('Camera Follow Pos',xx2,yy2+ofs)
-            end
-            if getProperty('boyfriend.animation.curAnim.name') == 'idle-alt' then
-                triggerEvent('Camera Follow Pos',xx2,yy2)
-            end
-            if getProperty('boyfriend.animation.curAnim.name') == 'idle' then
-                triggerEvent('Camera Follow Pos',xx2,yy2)
-            end
-        end
-    else
-        triggerEvent('Camera Follow Pos','','')
-    end
+--Configurations
+local bfCam={50, 200}
+local dadCam={375, 200}
+local drawDebugShit=false
+local intensity=25
+local speed=0.5
+
+--dont touch these vars
+local camPosX=0
+local camPosY=0
+
+--Camera Functions
+local func={
+		[0]=function() --[[ LEFT ]]
+			doTweenX('camMoveX', 'camGame.target', camPosX-intensity, speed, 'quadOut')
+			doTweenY('camMoveY', 'camGame.target', camPosY, speed, 'quadOut')
+		end,
+		[1]=function() --[[ DOWN ]]
+			doTweenX('camMoveX', 'camGame.target', camPosX, speed, 'quadOut')
+			doTweenY('camMoveY', 'camGame.target', camPosY+intensity, speed, 'quadOut')
+		end,
+		[2]=function() --[[ UP ]]
+			doTweenX('camMoveX', 'camGame.target', camPosX, speed, 'quadOut')
+			doTweenY('camMoveY', 'camGame.target', camPosY-intensity, speed, 'quadOut')
+		end,
+		[3]=function() --[[ RIGHT ]]
+			doTweenX('camMoveX', 'camGame.target', camPosX+intensity, speed, 'quadOut')
+			doTweenY('camMoveY', 'camGame.target', camPosY, speed, 'quadOut')
+		end,
+		['default']=function() --[[ IDLE ]]
+			doTweenX('camMoveX', 'camGame.target', camPosX, speed*2, 'quadOut')
+			doTweenY('camMoveY', 'camGame.target', camPosY, speed*2, 'quadOut')
+		end,
+	}
+
+function onCreatePost()
+	--bfCam = {getProperty('boyfriend.CameraPosition.x'), getProperty('boyfriend.CameraPosition.y')}
+	--dadCam = {getProperty('dad.CameraPosition.x'), getProperty('dad.CameraPosition.y')}
+	
+	makeLuaSprite('playerPos', 'empty',getProperty('boyfriend.x')+bfCam[1], getProperty('boyfriend.y')+bfCam[2])
+		makeGraphic('playerPos', 32, 32, 'FFFFFF')
+	addLuaSprite('playerPos', true)
+		
+	makeLuaSprite('enemyPos', 'empty',getProperty('dad.x')+dadCam[1], getProperty('dad.y')+dadCam[2])
+		makeGraphic('enemyPos', 32, 32, 'FFFFFF')
+	addLuaSprite('enemyPos', true)
+	
+	setProperty('playerPos.alpha', 0)
+	setProperty('enemyPos.alpha', 0)
+	
+	if drawDebugShit then
+		setProperty('playerPos.alpha', 1)
+		setProperty('enemyPos.alpha', 1)
+	end
 end
+
+function goodNoteHit(id,dir,note,sus)
+	if mustHitSection and func[dir] then
+		camPosX=getProperty('playerPos.x')
+		camPosY=getProperty('playerPos.y')
+		setProperty('cameraSpeed', 0)
+		func[dir]()
+	end
+end
+
+function opponentNoteHit(id,dir,note,sus)
+	if not mustHitSection and func[dir] then
+		camPosX=getProperty('enemyPos.x')
+		camPosY=getProperty('enemyPos.y')
+		setProperty('cameraSpeed', 0)
+		func[dir]()
+	end
+end
+
+function onBeatHit()
+	if curBeat%4==0 then
+		if mustHitSection then
+			camPosX=getProperty('playerPos.x')
+			camPosY=getProperty('playerPos.y')
+			setProperty('cameraSpeed', 0)
+			func['default']()
+		else
+			camPosX=getProperty('enemyPos.x')
+			camPosY=getProperty('enemyPos.y')
+			setProperty('cameraSpeed', 0)
+			func['default']()
+		end
+	end
+end
+
+function onSongStart()
+    setProperty("timeBar.color",getColorFromHex("00FFF6"))
+end
+
+function onCreate()
+    setProperty('skipCountdown', false)
+end
+
+
+
+
+
