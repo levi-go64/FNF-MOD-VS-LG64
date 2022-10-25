@@ -82,16 +82,16 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['Kau Jelek!!', 0.2], //From 0% to 19%
-		['Anjir!', 0.4], //From 20% to 39%
-		['Buruk sekali kau', 0.5], //From 40% to 49%
-		['Bruh', 0.6], //From 50% to 59%
+		['Ah Kalah Ini Mah!!', 0.2], //From 0% to 19%
+		['Payah banget kau!', 0.4], //From 20% to 39%
+		['Kau Payah', 0.5], //From 40% to 49%
+		['setengah buruk setengah keren', 0.6], //From 50% to 59%
 		['Lumayan', 0.69], //From 60% to 68%
 		['Keren', 0.7], //69%
 		['Bagus', 0.8], //From 70% to 79%
 		['Sempurna', 0.9], //From 80% to 89%
-		['Mantap', 1], //From 90% to 99%
-		['Mantap Parah!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['Kau Jago', 1], //From 90% to 99%
+		['Kau Jago Banget!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
 	public var modchartTweens:Map<String, FlxTween> = new Map<String, FlxTween>();
 	public var modchartSprites:Map<String, ModchartSprite> = new Map<String, ModchartSprite>();
@@ -1138,7 +1138,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "BOTPLAY", 32);
+		botplayTxt = new FlxText(400, timeBarBG.y + 55, FlxG.width - 800, "NGECHEAT KAU!", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
