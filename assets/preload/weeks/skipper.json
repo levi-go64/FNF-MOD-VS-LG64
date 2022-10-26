@@ -1,0 +1,23 @@
+{
+	"songs": [
+		["8 28 63", "skippa", [255, 165, 0]]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"difficulties": "Salty, Boyfriend",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
