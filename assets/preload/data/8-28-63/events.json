@@ -1,0 +1,29 @@
+{
+	"song": {
+		"speed": 3.5,
+		"stage": "madagascar",
+		"player1": "bf-car",
+		"player2": "skippa",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Toggle Trail",
+						"1",
+						"1"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf-car",
+		"bpm": 220,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "8-28-63"
+	}
+}
